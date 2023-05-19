@@ -11,6 +11,14 @@ import { SharedModule } from '../shared/shared.module';
 import { SurveyComponent } from './survey/survey.component';
 import { SimulatorComponent } from './simulator/simulator.component';
 import { ChartsComponent } from './charts/charts.component';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { ImportantInfoComponent } from './important-info/important-info.component';
+import { EditChartsComponent } from './edit-charts/edit-charts.component';
+import { AdminEditComponent } from './admin-edit/admin-edit.component';
+import { StudentListComponent } from './student-list/student-list.component';
+import { StudentResultsComponent } from './student-results/student-results.component';
+import { EditCareerComponent } from './edit-career/edit-career.component';
+import { EditTestComponent } from './edit-test/edit-test.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +27,13 @@ import { ChartsComponent } from './charts/charts.component';
     SurveyComponent,
     SimulatorComponent,
     ChartsComponent,
+    ImportantInfoComponent,
+    EditChartsComponent,
+    AdminEditComponent,
+    StudentListComponent,
+    StudentResultsComponent,
+    EditCareerComponent,
+    EditTestComponent,
   ],
   imports: [
     CommonModule,
@@ -27,7 +42,8 @@ import { ChartsComponent } from './charts/charts.component';
     SharedModule,
     ReactiveFormsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxPaginationModule
   ],
   exports: [
     PagesComponent
