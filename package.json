@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve -o",
+    "start": "ng serve --proxy-config proxy.conf.json -o",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -19,7 +19,10 @@
     "@angular/platform-browser-dynamic": "^16.0.0",
     "@angular/router": "^16.0.0",
     "bootstrap": "^5.2.3",
+    "chart.js": "^4.3.0",
+    "ngx-pagination": "^6.0.3",
     "rxjs": "~7.8.0",
+    "sweetalert2": "^11.7.5",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
   },

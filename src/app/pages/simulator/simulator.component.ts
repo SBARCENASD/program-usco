@@ -21,15 +21,22 @@ export class SimulatorComponent {
   constructor(
     private fb: FormBuilder,
     private simulatorSrv: SimulatorService
-  ){}
+  ) { }
 
-  calcularPond()
-  {
-    
+  calcularPond() {
     this.simulatorSrv.calcularPonderado(this.formPonderado.value).subscribe((response) => {
       this.careers = response
     }
     );
-    
   }
+
+  validateInput(event: KeyboardEvent) {
+    const input = event.target as HTMLInputElement;
+    const value = input.value + event.key;
+    const valid = /^(100|[0-9]{1,2})$/.test(value);
+    if (!valid) {
+      event.preventDefault();
+    }
+  }
+
 }
